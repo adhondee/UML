@@ -17,6 +17,7 @@ Package "View Payment(s)" as MakePayment{
 
     Shopper --> (Login) 
     Shopper --> (ViewPurchases)
+    
     (ViewPurchases) .> (Login) : include
     
     (Login) --> (MerchantAPI)
